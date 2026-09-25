@@ -1,4 +1,4 @@
-# TryHackMe — Windows Fundamentals 1
+# TryHackMe - Windows Fundamentals 1
 
 ## Overview
 
