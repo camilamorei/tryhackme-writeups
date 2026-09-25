@@ -1,4 +1,4 @@
-kkk# TryHackMe — Windows Fundamentals 1
+# TryHackMe — Windows Fundamentals 1
 
 ## Overview
 
@@ -8,7 +8,7 @@ The room also includes hands-on interaction with a Windows virtual machine.
 
 ---
 
-## Task 1 — Windows Editions
+## Task 1 - Windows Editions
 
 Windows has several editions designed for different use cases. Windows 11 is available in Home and Pro editions, while Windows Server has separate editions for server environments.
 
@@ -26,7 +26,7 @@ BitLocker is Microsoft's full-volume encryption feature. It can be used to prote
 
 ---
 
-## Task 2 — The Desktop (GUI)
+## Task 2 - The Desktop (GUI)
 
 The Windows graphical user interface contains several components, including:
 
@@ -58,7 +58,7 @@ The Windows desktop provides quick access to applications, files, system setting
 
 ---
 
-## Task 3 — Introduction to Windows
+## Task 3 - Introduction to Windows
 
 This section introduced the Windows laboratory environment and the process of interacting with a Windows machine remotely.
 
@@ -72,7 +72,7 @@ For security reasons, lab credentials are not included in this public writeup.
 
 ---
 
-## Task 4 — Windows File System
+## Task 4 - Windows File System
 
 Modern Windows systems primarily use the New Technology File System (NTFS).
 
@@ -116,7 +116,7 @@ Understanding NTFS permissions and ADS is important when analyzing Windows syste
 
 ---
 
-## Task 5 — Windows\System32
+## Task 5 - Windows\System32
 
 The Windows operating system is traditionally installed under:
 
@@ -150,7 +150,7 @@ Environment variables provide a convenient way for applications and users to ref
 
 ---
 
-## Task 6 — User Accounts, Profiles and Permissions
+## Task 6 - User Accounts, Profiles and Permissions
 
 Windows local accounts can generally be classified as:
 
@@ -201,7 +201,7 @@ Windows permissions are strongly connected to users and groups. Understanding gr
 
 ---
 
-## Task 7 — User Account Control (UAC)
+## Task 7 - User Account Control (UAC)
 
 User Account Control (UAC) is a Windows security feature designed to prevent unauthorized operations from automatically running with elevated privileges.
 
@@ -227,7 +227,7 @@ The distinction between normal and elevated privileges is important when analyzi
 
 ---
 
-## Task 8 — Settings and Control Panel
+## Task 8 - Settings and Control Panel
 
 Windows provides two major locations for configuring the operating system:
 
@@ -254,7 +254,7 @@ Some Windows configuration options are still managed through Control Panel even 
 
 ---
 
-## Task 9 — Task Manager
+## Task 9 - Task Manager
 
 Task Manager provides information about applications and processes currently running on the system.
 
