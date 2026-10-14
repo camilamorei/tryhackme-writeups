@@ -1,12 +1,12 @@
-# TryHackMe — Nmap: The Basics
+# TryHackMe - Nmap: The Basics
 
-**Room:** [Nmap: The Basics](https://tryhackme.com/r/room/nmap)  
-**Category:** Network Security  
-**Topics:** Host Discovery, Port Scanning, Version Detection, Timing and Output
+Room: [Nmap: The Basics](https://tryhackme.com/r/room/nmap)  
+Category: Network Security  
+Topics: Host Discovery, Port Scanning, Version Detection, Timing and Output
 
 ---
 
-## Task 1 — Introduction
+## Task 1 - Introduction
 
 This room introduces the fundamentals of Nmap, a network scanning tool used to discover live hosts, identify open ports, detect running services and collect information about target systems.
 
@@ -20,22 +20,22 @@ This room introduces the fundamentals of Nmap, a network scanning tool used to d
 
 ---
 
-## Task 2 — Host Discovery: Who Is Online?
+## Task 2 - Host Discovery: Who Is Online?
 
 Host discovery identifies which devices are online within a target network.
 
 ### Question 1
 
-**What is the last IP address that will be scanned when your scan target is `192.168.0.1/27`?**
+What is the last IP address that will be scanned when your scan target is `192.168.0.1/27`?
 
-**Answer:** `192.168.0.31`
+Answer: `192.168.0.31`
 
 ### Explanation
 
 A `/27` subnet uses the subnet mask `255.255.255.224`, providing 32 total addresses.
 
 - Network address: `192.168.0.0`
-- Usable host addresses: `192.168.0.1` – `192.168.0.30`
+- Usable host addresses: `192.168.0.1` to `192.168.0.30`
 - Broadcast address: `192.168.0.31`
 
 Nmap interprets `192.168.0.1/27` as the subnet `192.168.0.0/27`, so the last address in the scanned range is `192.168.0.31`.
@@ -55,15 +55,15 @@ nmap -sn 192.168.0.1-10
 
 ---
 
-## Task 3 — Port Scanning: Who Is Listening?
+## Task 3 - Port Scanning: Who Is Listening?
 
 Port scanning identifies services listening for incoming connections on TCP and UDP ports.
 
 ### Question 1
 
-**How many TCP ports are open on the target system at `MACHINE_IP`?**
+How many TCP ports are open on the target system at `MACHINE_IP`?
 
-**Answer:** `6`
+Answer: `6`
 
 ### Explanation
 
@@ -85,9 +85,9 @@ nmap -F MACHINE_IP
 
 ### Question 2
 
-**Find the listening web server on `MACHINE_IP` and access it with your browser. What is the flag that appears on its main page?**
+Find the listening web server on `MACHINE_IP` and access it with your browser. What is the flag that appears on its main page?
 
-**Answer:** `THM{SECRET_PAGE_38B9P6}`
+Answer: `THM{SECRET_PAGE_38B9P6}`
 
 ### Explanation
 
@@ -117,15 +117,15 @@ http://MACHINE_IP:PORT
 
 ---
 
-## Task 4 — Version Detection: Extract More Information
+## Task 4 - Version Detection: Extract More Information
 
 Nmap can identify the operating system and the software versions running on open ports.
 
-### Question
+### Question 1
 
-**What is the name and detected version of the web server running on `MACHINE_IP`?**
+What is the name and detected version of the web server running on `MACHINE_IP`?
 
-**Answer:** `lighttpd 1.4.74`
+Answer: `lighttpd 1.4.74`
 
 ### Explanation
 
@@ -156,15 +156,15 @@ nmap -Pn MACHINE_IP
 
 ---
 
-## Task 5 — Timing: How Fast Is Fast?
+## Task 5 - Timing: How Fast Is Fast?
 
 Nmap provides six timing templates that control scan speed and timing behavior.
 
-### Question
+### Question 1
 
-**What is the non-numeric equivalent of `-T4`?**
+What is the non-numeric equivalent of `-T4`?
 
-**Answer:** `-T aggressive`
+Answer: `-T aggressive`
 
 ### Timing Templates
 
@@ -200,15 +200,15 @@ Faster scans may generate more network traffic and can miss results on unreliabl
 
 ---
 
-## Task 6 — Output: Controlling What You See
+## Task 6 - Output: Controlling What You See
 
 Nmap supports verbose output, debugging output and several report formats.
 
-### Question
+### Question 1
 
-**What option must you add to your Nmap command to enable debugging?**
+What option must you add to your Nmap command to enable debugging?
 
-**Answer:** `-d`
+Answer: `-d`
 
 ### Verbosity and Debugging
 
@@ -245,13 +245,13 @@ This creates files with `.nmap`, `.xml`, and `.gnmap` extensions.
 
 ---
 
-## Task 7 — Conclusion and Summary
+## Task 7 - Conclusion and Summary
 
-### Question
+### Question 1
 
-**What kind of scan will Nmap use if you run `nmap MACHINE_IP` with local user privileges?**
+What kind of scan will Nmap use if you run `nmap MACHINE_IP` with local user privileges?
 
-**Answer:** `Connect Scan (-sT)`
+Answer: `Connect Scan (-sT)`
 
 ### Explanation
 
@@ -288,4 +288,4 @@ Without sufficient privileges to send raw packets, Nmap generally uses a TCP con
 - How to enable verbose and debugging output.
 - How to export scan results for later analysis.
 
-**Disclaimer:** All scanning activities should be performed only against systems you own or have explicit authorization to test.
+Disclaimer: All scanning activities should be performed only against systems you own or have explicit authorization to test.
